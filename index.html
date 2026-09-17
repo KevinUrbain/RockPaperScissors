@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierre, Papier, Ciseaux</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f9;
+        color: #333;
+        margin-top: 50px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      .scoreboard {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .choices {
+        margin: 30px 0;
+      }
+      button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #3498db;
+        color: white;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      #result {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        min-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+
+    <div class="scoreboard">
+      <p>
+        Player : <span id="player-score">0</span> | Computer :
+        <span id="computer-score">0</span>
+      </p>
+    </div>
+
+    <div class="choices">
+      <button id="rock">Rock 🪨</button>
+      <button id="paper">Paper 📄</button>
+      <button id="scissors">Scissors ✂️</button>
+    </div>
+
+    <div class="result-display">
+      <p id="result">Let's make a choice !</p>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
